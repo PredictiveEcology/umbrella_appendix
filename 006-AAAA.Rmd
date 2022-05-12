@@ -1,0 +1,23 @@
+# AAAA
+
+A bird named AAAA does bird things (Figure \@ref(fig:AAAA-plot1)).
+
+```{r AAAA-plot1, fig.cap='Here is a nice AAAA figure!', out.width='80%', fig.asp=.75, fig.align='center', fig.alt='Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases.'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+It does other bird things too (Table \@ref(tab:AAAA-table1)).
+
+```{r AAAA-table1, tidy=FALSE}
+knitr::kable(
+  head(pressure, 10), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+<!-- TODO:
+  Tati, my thought was that you can build a template in this file for a bird species,
+  then we can programatically copy/paste the file, replacing the bird code in each copy to match 
+  the list of bird species in the results.
+-->
