@@ -1,4 +1,4 @@
-# (PART\*) Scenarios {-}
+# (PART\*) Scenarios
 
 # Overview of scenarios
 
