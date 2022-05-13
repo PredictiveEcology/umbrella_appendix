@@ -1,0 +1,57 @@
+# Output tables
+
+In this section we present all table outputs that were used to generate the 
+information and plots in the results section.  
+
+```{r, include=FALSE}
+Require::Require("shiny")
+Require::Require("DT")
+Require::Require("data.table")
+Require::Require("htmltools")
+datatable(iris)
+dstPath <- file.path(getwd(), "tables")
+```
+
+```{r tables, results="asis"}
+
+listOfTables <- list('Table 1' = data.frame(read.csv(file.path(dstPath, "anovaLmCovariates.csv"))),
+                     'Table 2' = data.frame(read.csv(file.path(dstPath, "habitatDT.csv"))),
+                     'Table 3' = data.frame(read.csv(file.path(dstPath, "meanHabitatDT.csv"))),
+                     'Table 4' = data.frame(read.csv(file.path(dstPath, "speciesDT.csv"))),
+                     'Table 5' = data.frame(read.csv(file.path(dstPath, "meanSpeciesDT.csv"))),
+                     'Table 6' = data.frame(read.csv(file.path(dstPath, "throughTimeTableGroupsD.csv"))),
+                     'Table 7' = data.frame(read.csv(file.path(dstPath, "throughTimeTableSD.csv"))))
+
+listOfCaptions <- list('Table 1' = "This table represents a linear model fitted with all data available to identify which covariates influence the calculation of BCUI results",
+                       'Table 2' = "This table is a statistical summary of all data for each habitat group per scenario",
+                       'Table 3' = "This table is a statistical summary of all data for habitat group across all scenarios",
+                       'Table 4' = "This table is a statistical summary of all data for each species per scenario",
+                       'Table 5' = "This table is a statistical summary of all data for individual species across all scenarios",
+                       'Table 6' = "This table presents the trend through time for each habitat group per scenario",
+                       'Table 7' = "This table presents the trend through time for each species per scenario")
+
+for(i in names(listOfTables)){
+  
+  cat("\n") 
+  cat("##", i, "\n") # Create second level headings with the names.
+  cat("\n")
+  
+  cat(listOfCaptions[[i]])
+    
+  cat("\n\n\\pagebreak\n")
+  cat("\n")
+  
+  print(
+   shiny::tagList(
+    datatable(listOfTables[[i]], options = list(scrollX = TRUE,
+                                 autoWidth = TRUE,
+  columnDefs = list(list(width = '200px', 
+                         targets = c(1, 3))))
+  ))
+   )
+    cat("\n\n\\pagebreak\n")
+  cat("\n")
+  
+}
+```
+

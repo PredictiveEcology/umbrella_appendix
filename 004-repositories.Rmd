@@ -1,0 +1,13 @@
+# Repositories
+
+Here you can find the repository for the whole simulation and analysis: **https://github.com/tati-micheletti/NWT/tree/development**
+
+More specifically, these are the scripts used for the following:  
+**Simulations:** https://github.com/tati-micheletti/NWT/blob/development/5_runningSimulations.R
+**Umbrella analysis:** https://github.com/tati-micheletti/NWT/blob/development/7_hotspotsAnalysis_V2.R
+
+The following modules were used for the predictions:  
+**Caribou predictions:** https://github.com/tati-micheletti/caribouRSF_NT
+**Landbird predictions:** https://github.com/tati-micheletti/birdsNWT
+
+
