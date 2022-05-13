@@ -1,5 +1,5 @@
-Welcome to the online Appendix of the manuscript *Will this umbrella leak? A caribou umbrella index for boreal bird conservation*. 
+Welcome to the online appendix of the manuscript *Will this umbrella leak? A caribou umbrella index for boreal bird conservation*.
 
-Please feel free to [Contact me](mailto:tati.silva@ubc.ca) if you need more information about the manuscript or these online appendix.  
+<!-- TODO: add full citation info once published -->
 
-
+Please contact Tati Micheletti (<tati.silva@ubc.ca>) for more information about the manuscript or this online appendix.  

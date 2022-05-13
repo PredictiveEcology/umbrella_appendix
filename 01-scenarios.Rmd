@@ -1,0 +1,19 @@
+# Scenarios
+
+We developed ten scenarios defined as the area used for the calculation of the caribou umbrella index: from 5% to 95% of the study area excluding water, in 10% increments.
+With landbirds density on water pixels being equal to zero, we excluded these pixels from BCUI assessment.
+
+```{r figuresScenarios, results="asis"}
+scenarios <- seq(0.05, 0.95, 0.1)
+listFigures <- as.list(paste0("figures/Scenarios/groupsAveraged_", scenarios,"_boxplot.png"))
+names(listFigures) <- paste0("scenario", scenarios)
+
+for (index in 1:length(scenarios)) {
+  cat("\n") 
+  cat(paste0("## Scenario ", scenarios[index]*100, "%\n")) # Create second level headings with the names.
+
+  cat(paste0("![Boxplot showing minimum and maximum (vertical lines), median (horizontal line), interquartile range (IQR, colored box), as well as outliers (black points) of boreal caribou umbrella indices (BCUI) by landbird habitat association calculated across time (2011 - 2091), climate projections (CanESM2, CCSM4 and INM-CM4) and replicates (n = 5), as well as the weighted average across these (in grey dashed line) for Scenario ", scenarios[index]*100, "%. The average is weighted based on the number of species in each group.](", listFigures[[index]], ")"), "\n")
+  cat("\n\n\\pagebreak\n")
+  cat("\n")
+}
+```
