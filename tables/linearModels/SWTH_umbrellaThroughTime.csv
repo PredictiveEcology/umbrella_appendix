@@ -1,0 +1,20 @@
+
+Call:
+lm(formula = umbrellaIndex ~ ProportionAreaChosen + Year, data = subTableGLM)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.34867 -0.05134 -0.00091  0.04559  0.28557 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          -6.5497715  0.2357091 -27.788  < 2e-16 ***
+ProportionAreaChosen -0.0791474  0.0113126  -6.996 5.84e-12 ***
+Year                  0.0030901  0.0001149  26.898  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.08899 on 747 degrees of freedom
+Multiple R-squared:  0.5084,	Adjusted R-squared:  0.5071 
+F-statistic: 386.2 on 2 and 747 DF,  p-value: < 2.2e-16
+
