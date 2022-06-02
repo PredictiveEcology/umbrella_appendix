@@ -1,5 +1,0 @@
-# (PART\*) Scenarios
-
-# Overview of scenarios
-
-Lorem ipsum ...
