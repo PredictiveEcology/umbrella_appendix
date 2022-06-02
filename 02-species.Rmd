@@ -28,7 +28,7 @@ datatable(spList, options = list(scrollX = TRUE,
 
 The following sections present all individual species results:  
 1. **Map of selected areas:** Map that represents the high quality areas chosen for caribou and landbird species for 2031 and 15% of total area.
-  Other scenarios can be seen in 
+  Other scenarios can be seen [here](https://drive.google.com/drive/u/0/folders/1oFDas7tzCv3pJgXrr-f7a53N7Gb9Can_)
 
 2. **Linear regression results:** To evaluate temporal trends in BCUI for each landbird species, we did linear regressions of BCUI against projected year and scenario, using both climate models and replicates to assess uncertainty.
   Here we show the model output with `BIRD ~ ProportionAreaChosen + Year` and plotted values with fitted linear model through time, for each scenario.
