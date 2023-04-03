@@ -4,16 +4,16 @@ author: "T. Micheletti and A. Chubaty"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-always_allow_html: true
-bibliography: [packages.bib, references.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
+always_allow_html: yes
+bibliography:
+- packages.bib
+- references.bib
 cover-image: figures/Figure2.png
-description: |
-  This is the online appendix for the paper _Will this umbrella leak? A caribou 
-  umbrella index for boreal bird conservation_.
+description: "This is the online appendix for the paper _Will this umbrella leak?
+  A caribou \numbrella index for boreal bird conservation_.\n"
 link-citations: yes
 github-repo: PredictiveEcology/umbrella_appendix
-editor_options: 
+editor_options:
   chunk_output_type: console
 ---
 
@@ -41,7 +41,7 @@ knitr::opts_chunk$set(
 
 # Appendix II
 
-This appendix presents (1) all individual species results, as well as (2) specific scenarios, provides direct links to the (3) output tables used for generating the results presented in the manuscript [@Micheletti:2023] and points to the (4) repository and scripts used for this specific analysis.
+This appendix presents (1) all individual species results, as well as (2) specific scenarios, provides direct links to the (3) output tables used for generating the results presented in the manuscript ([Micheletti et al., 2023](https://doi.org/10.1111/csp2.12908)) and points to the (4) repository and scripts used for this specific analysis.
 
 The content can be found in the online manual available on <https://umbrella.predictiveecology.org>.
 
