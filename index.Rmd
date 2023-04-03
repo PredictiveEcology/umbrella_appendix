@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 always_allow_html: yes
+url: https://umbrella.predictiveecology.org
 bibliography:
 - packages.bib
 - references.bib
